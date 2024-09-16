@@ -5,9 +5,9 @@ Here you will find all sorts of bash scripts
 ## Categories
 
 ### Automation:
-- [OTD-Installer](https://github.com/PolyCatDev/flipper-cafe/tree/main/Bash-Factory/OTD-Installer)
-- [CHIRP-Installer](https://github.com/PolyCatDev/flipper-cafe/tree/main/Bash-Factory/CHIRP-Installer)
-- [DevEnv-Setup](https://github.com/PolyCatDev/flipper-cafe/tree/main/Bash-Factory/DevEnv-Setup)
+- [OTD-Installer](https://github.com/PolyCatDev/bash-factory/tree/main/OTD-Installer)
+- [CHIRP-Installer](https://github.com/PolyCatDev/bash-factory/tree/main/CHIRP-Installer)
+- [DevEnv-Setup](https://github.com/PolyCatDev/bash-factory/tree/main/DevEnv-Setup)
 
 ### Fun
-- [GLaDOS-TTS-Wrapper](https://github.com/PolyCatDev/flipper-cafe/tree/main/Bash-Factory/GLaDOS-TTS-Wrapper)
+- [GLaDOS-TTS-Wrapper](https://github.com/PolyCatDev/bash-factory/tree/main/GLaDOS-TTS-Wrapper)
