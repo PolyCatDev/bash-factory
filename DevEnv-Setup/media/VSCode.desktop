@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=distrobox-enter *distrobox container name* -- code
+Icon=/home/*user*/.local/share/icons/desktop/vscode.png
+Name=VSCode
