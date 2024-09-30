@@ -1,6 +1,6 @@
 # Bash Factory
 
-Here you will find all sorts of bash scripts
+Here you will find all sorts of shell scripts
 
 ## Categories
 
