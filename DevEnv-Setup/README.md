@@ -1,5 +1,5 @@
-# ATTENTION
-This script is not being developed anymore. Since I created this script I've changed the way I develop software. If there is demand I might finish it tho
+>[!WARNING]
+>This script is not being developed anymore. Since I created this script I've changed the way I develop software. If there is demand I might finish it tho
 
 # What is this?
 It's a collection of scripts that set up Linux Development Environments.
