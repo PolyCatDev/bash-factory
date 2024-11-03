@@ -1,4 +1,4 @@
-# PolyCat's CHIRP Linux Installer
+# PolyCat's CHIRP Installer
 A python installer script for the popular ham radio programming software [CHIRP](https://chirpmyradio.com) for Linux and MacOS
 
 > [!WARNING]
@@ -6,3 +6,6 @@ A python installer script for the popular ham radio programming software [CHIRP]
 
 ## Installation
 Download `chirp-install.tar.gz` and extract it. You will find a binary and a `download` folder in the archive. Open the terminal there and run the binary (`./chirp-installer`) and follow the wizard.
+
+## What is the `legacy` folder
+That is the old Linux only bash script that inspired this one.
