@@ -1,4 +1,4 @@
-# An installation script for the popular radio programming program [CHIRP](https://chirp.danplanet.com/projects/chirp/wiki/Home)
+# An installation script for the popular radio programming program [CHIRP](https://chirpmyradio.com)
 # By PolyCat
 
 from bs4 import BeautifulSoup
