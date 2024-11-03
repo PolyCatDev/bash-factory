@@ -23,4 +23,4 @@ I like using DistroBox Containers for Dev Environments and I wanted a script to 
 - [ ] CentOS
 
 # Preview
-![DevEnv Demo Gif](https://github.com/PolyCatDev/flipper-cafe/blob/main/Bash-Factory/DevEnv-Setup/media/dev-env-demo.gif)
+![DevEnv Demo Gif](https://github.com/PolyCatDev/bash-factory/blob/main/DevEnv-Setup/media/dev-env-demo.gif)
