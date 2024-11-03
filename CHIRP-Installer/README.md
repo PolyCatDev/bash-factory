@@ -1,9 +1,8 @@
 # PolyCat's CHIRP Linux Installer
-An installation script for the popular radio programming software [CHIRP](https://chirp.danplanet.com/projects/chirp/wiki/Home)
+A python installer script for the popular ham radio programming software [CHIRP](https://chirpmyradio.com) for Linux and MacOS
 
-This script's main trick is the optional ability of installing the app using a [Distrobox](https://distrobox.it/) container for more stability
+> [!WARNING]
+> I do not have a Mac to test on but since it's [Homebrew](https://brew.sh/) and python it should work.
 
-## Commands
-
-- `-h, --help` - Shows the help page
-- `-d <name>, --distrobox <name>` - Will run the commands in a distrobox container with a name of your choosing
+## Installation
+Download `chirp-install.tar.gz` and extract it. You will find a binary and a `download` folder in he archive. Open the terminal there and run the binary (`./chirp-installer`) and follow the wizard.
