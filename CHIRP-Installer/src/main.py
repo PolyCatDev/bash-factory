@@ -1,3 +1,6 @@
+# An installation script for the popular radio programming program [CHIRP](https://chirp.danplanet.com/projects/chirp/wiki/Home)
+# By PolyCat
+
 from bs4 import BeautifulSoup
 from requests import get
 from subprocess import run, check_output
