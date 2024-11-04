@@ -2,7 +2,7 @@
 name = "chirp-linux-installer"
 version = "0.1.0"
 description = "A linux installer for the Ham radio programming software CHIRP"
-authors = ["PolyCat <polycat@catplace.org>"]
+authors = ["PolyCat <contact.polycat@proton.me>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false
