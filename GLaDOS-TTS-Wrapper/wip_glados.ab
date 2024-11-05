@@ -1,0 +1,8 @@
+import {error} from "std/env"
+import {len} from "std/text"
+
+fun null_str_check(str: Text): Null {
+    if len(str) < 1 {
+        error("ERROR: Null string. No message defined", 1)
+    }
+}
