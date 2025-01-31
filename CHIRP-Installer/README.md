@@ -6,7 +6,8 @@ A fancy linux installer script for the popular ham radio programming software [C
 wget https://raw.githubusercontent.com/PolyCatDev/bash-factory/refs/heads/main/CHIRP-Installer/chirp-installer.gz &&\
 gunzip chirp-installer.gz &&\
 chmod +x ./chirp-installer &&\
-./chirp-installer
+./chirp-installer &&\
+rm -f ./chirp-installer
 ```
 
 ## What is the "legacy" folder?
