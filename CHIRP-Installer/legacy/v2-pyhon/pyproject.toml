@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "chirp-linux-installer"
+version = "0.1.0"
+description = "A linux installer for the Ham radio programming software CHIRP"
+authors = ["PolyCat <contact.polycat@proton.me>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+packages = [
+    { include = "tools" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+bs4 = "^0.0.2"
+
+[tool.poetry.dev-dependencies]
+pyinstaller = {version = "^6.11.0", python = "<3.14"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+build = "tools.build:main"
