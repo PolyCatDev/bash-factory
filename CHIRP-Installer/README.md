@@ -4,7 +4,8 @@ A fancy linux installer script for the popular ham radio programming software [C
 ## Download and Run
 ```bash
 wget https://raw.githubusercontent.com/PolyCatDev/bash-factory/refs/heads/main/CHIRP-Installer/chirp-installer.gz &&\
-gunzip chirp-installer.gz
+gunzip chirp-installer.gz &&\
+chmod +x ./chirp-installer &&\
 ./chirp-installer
 ```
 
