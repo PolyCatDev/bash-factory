@@ -15,7 +15,7 @@ rm -f ./chirp-installer
 mkdir -p ~/.local/share/applications/ ~/.local/share/icons/apps/ && cd ~/.local/share/applications/ &&\
 curl -o chirp.desktop https://raw.githubusercontent.com/PolyCatDev/bash-factory/refs/heads/main/CHIRP-Installer/media/chirp.desktop &&\
 curl -o ~/.local/share/icons/apps/chirp.png https://raw.githubusercontent.com/PolyCatDev/bash-factory/refs/heads/main/CHIRP-Installer/media/chirp.png &&\
-echo "Exec=$(realpath $(which chirp))" >> chirp.desktop
+echo "Exec=$(realpath $(which chirp))" >> chirp.desktop &&\
 echo "Icon=$(realpath ~/.local/share/icons/apps/chirp.png)" >> chirp.desktop
 
 ```
