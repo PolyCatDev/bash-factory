@@ -3,6 +3,7 @@ package os_cmd
 import (
 	"errors"
 	"fmt"
+    "strings"
 )
 
 // Takes in "dnf", "apt" or "brew" and returns the necessary args
@@ -32,4 +33,15 @@ func GetPackageManagerArgs(packageManager string) ([]string, bool, error) {
 	}
 
 	return args, isSudo, err
+}
+
+// Accepts a group and returns command and args
+// for adding that user to the /etc/group file
+func CurrentUserAddToGroup(group string) (string, []string) {
+	user := Run("whoami", []string{}, false)
+	user = strings.TrimSpace(user)
+
+	args := []string{"-aG", group, user}
+
+	return "usermod", args
 }
