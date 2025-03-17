@@ -3,7 +3,7 @@ package os_cmd
 import (
 	"errors"
 	"fmt"
-    "strings"
+	"strings"
 )
 
 // Takes in "dnf", "apt" or "brew" and returns the necessary args
@@ -36,7 +36,7 @@ func GetPackageManagerArgs(packageManager string) ([]string, bool, error) {
 }
 
 // Accepts a group and returns command and args
-// for adding that user to the /etc/group file
+// for adding that user via the usermod command
 func CurrentUserAddToGroup(group string) (string, []string) {
 	user := Run("whoami", []string{}, false)
 	user = strings.TrimSpace(user)
