@@ -1,6 +1,9 @@
 # PolyCat's CHIRP Installer
 A fancy linux installer script for the popular ham radio programming software [CHIRP](https://chirpmyradio.com/)
 
+>[!KNOWN BUG]
+> When first installing dependencies with `brew` the program might error out after installing everthing. Just run the program again and you should be good.
+
 ## Download and Run
 ```bash
 curl -o chirp-installer.gz https://raw.githubusercontent.com/PolyCatDev/bash-factory/refs/heads/main/CHIRP-Installer/chirp-installer.gz &&\
