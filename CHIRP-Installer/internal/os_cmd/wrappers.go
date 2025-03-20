@@ -1,12 +1,14 @@
 package os_cmd
 
 import (
+	"fmt"
 	"log"
+	"os"
 	"os/exec"
 )
 
 // Accepts a commdand and a slice of arguments and returns the output of the command
-func Run(command string, args []string, isSudo bool) string {
+func RunReturn(command string, args []string, isSudo bool) string {
 
 	if isSudo {
 		args = append([]string{command}, args...)
@@ -24,4 +26,24 @@ func Run(command string, args []string, isSudo bool) string {
 
 }
 
+// Accepts a commdand and a slice of arguments and
+// runs it with std output logs
+func Run(command string, args []string, isSudo bool) {
 
+	fmt.Print("\n")
+	defer fmt.Print("\n")
+
+	if isSudo {
+		args = append([]string{command}, args...)
+		command = "sudo"
+	}
+
+	cmd := exec.Command(command, args...)
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+
+	err := cmd.Run()
+	if err != nil {
+		log.Fatalln(err)
+	}
+}

@@ -38,7 +38,7 @@ func GetPackageManagerArgs(packageManager string) ([]string, bool, error) {
 // Accepts a group and returns command and args
 // for adding that user via the usermod command
 func CurrentUserAddToGroup(group string) (string, []string) {
-	user := Run("whoami", []string{}, false)
+	user := RunReturn("whoami", []string{}, false)
 	user = strings.TrimSpace(user)
 
 	args := []string{"-aG", group, user}

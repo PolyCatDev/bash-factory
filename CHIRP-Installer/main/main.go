@@ -12,12 +12,14 @@ import (
 	"github.com/PolyCatDev/chirp-installer/internal/scraper"
 )
 
+var pkgManager string
+var deps []string
+var isSudo bool
+
 func main() {
 	// Set package manager
 	reader := bufio.NewReader(os.Stdin)
-	var pkgManager string
-	var deps []string
-	var isSudo bool
+
 	for {
 		var err error
 		fmt.Print("Choose a package manager (apt/dnf/brew): ")
@@ -39,9 +41,9 @@ func main() {
 	wg.Add(2)
 
 	// Download CHIRP wheel package
+    fmt.Println("Downloading CHIRP wheel")
 	go func() {
 		defer wg.Done()
-		fmt.Println("Downloading CHIRP")
 		downUrl, wheelName := scraper.GetChirpWheelUrl()
 		scraper.DownloadFile(downUrl, wheelName)
 		wheelNameChan <- wheelName
@@ -64,7 +66,7 @@ func main() {
 	os_cmd.Run("pipx", []string{"install", "--system-site-packages", "./" + wheelName}, false)
 
 	// Add user to dialout group if not already
-	groups := os_cmd.Run("groups", []string{}, false)
+	groups := os_cmd.RunReturn("groups", []string{}, false)
 	if !strings.Contains(groups, "dialout") {
 		fmt.Println("Adding user to dialout group")
 		addUserCommand, AddUserArgs := os_cmd.CurrentUserAddToGroup("dialout")
