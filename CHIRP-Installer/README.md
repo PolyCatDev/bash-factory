@@ -24,8 +24,5 @@ echo "Icon=$(realpath ~/.local/share/icons/apps/chirp.png)" >> chirp.desktop
 
 ```
 
-## Preview
-![chirp-installer](https://github.com/user-attachments/assets/b0d20bb5-aa9e-4ff9-8129-e8026f6a84f2)
-
 ## What is the "legacy" folder?
 The place where the previous versions of this script are stored
