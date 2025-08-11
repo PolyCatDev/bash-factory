@@ -55,7 +55,7 @@ Diagnostics:
     - main_returns_nonint
 """
 
-with open(".glangd", "w") as f:
+with open(".clangd", "w") as f:
     _ = f.write(clangd_config)
 
 
