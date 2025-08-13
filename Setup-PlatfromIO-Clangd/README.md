@@ -1,6 +1,6 @@
 # Setup PlatfromIO for Clangd
 > [!IMPORTANT]
-> This script has become immediately outdated due to my [clangd-platformio repo](https://github.com/PolyCatDev/clangd-platformio), and it never worked particularly well to begin with.
+> This script has become immediately outdated due to my [clangd-platformio repo](https://github.com/PolyCatDev/clangd-platformio), and the script never worked particularly well to begin with.
 
 
 Simple script to set up PlatfromIO and Clangd LSP to work together. 
