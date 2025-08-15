@@ -5,7 +5,7 @@ XButton2:: {
     startTime := A_TickCount
     while (A_TickCount - startTime < 1000) { 
         Send(" ")
-        Sleep(50)
+        Sleep(10)
     }
 }
 
@@ -14,5 +14,6 @@ e:: {
     Sleep(300)
     Send("ee")
 }
+
 
 #HotIf  ; Ends context-sensitive hotkeys
