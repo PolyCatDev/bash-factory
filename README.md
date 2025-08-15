@@ -8,7 +8,7 @@ Here you will find all sorts of automation scripts
 
 - [CHIRP-Installer](https://github.com/PolyCatDev/bash-factory/tree/main/CHIRP-Installer)
 - [PlatformIO Setup Clangd](https://github.com/PolyCatDev/bash-factory/tree/main/Setup-PlatfromIO-Clangd)
-- [Mirror's Edge Macros](https://github.com/PolyCatDev/bash-factory/tree/main/Mirrors's-Edge-Macros)
+- [Mirror's Edge Macros](https://github.com/PolyCatDev/bash-factory/tree/main/Mirror's-Edge-Macros)
 
 ### Fun
 
