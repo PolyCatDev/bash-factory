@@ -1,5 +1,10 @@
 # PolyCat's CHIRP Installer
+
 A fancy linux installer script for the popular ham radio programming software [CHIRP](https://chirpmyradio.com/)
+
+> [!IMPORTANT]
+> This script has been superseded by [my appimage deployment](https://github.com/PolyCatDev/chirp-appimage).
+
 
 >[!NOTE]
 > **Known Bug**: 
